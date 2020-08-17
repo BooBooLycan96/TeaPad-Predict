@@ -1,0 +1,33 @@
+﻿<Window x:Class="TeaPad_Predict.Harvest"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TeaPad_Predict"
+        mc:Ignorable="d"
+        Title="Harvest" Height="646.278" Width="817.251" Background="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}">
+    <Grid Margin="0,0,2,4">
+        <Grid.Background>
+            <ImageBrush ImageSource="photo-1544015759-237f87d55ef3.jpg"/>
+        </Grid.Background>
+
+        <Image x:Name="imgPhoto" Height="271" Margin="14,10,394,283" Width="377" Source="IMG-20200202-WA0001.jpg" Stretch="Fill"/>
+        <Button Content="Test Image" Margin="432,414,240,157" Click="Button_Click" Height="40" Background="#FFFBFBFB" BorderBrush="WhiteSmoke"/>
+        <Button Content="Browse Image" Margin="607,297,33,232" Width="145" Height="40" Click="Button_Click_1" Background="#FFFBFBFB" BorderBrush="WhiteSmoke"/>
+        <ListBox Height="187" Margin="20,356,423,43" Width="373" >
+            <Label x:Name="lbl1" Content="" Height="177" Width="363"/>
+        </ListBox>
+        <Label Content="Prediction Details" Margin="20,306,628,247" Foreground="Aqua"/>
+        <Label x:Name="FileNameLabel" Content="" Margin="431,306,217,221" RenderTransformOrigin="0.484,0.469"/>
+        <Image x:Name="LayoutRoot" Height="271" Margin="400,10,8,283" Width="377" Source="IMG-20200202-WA0001.jpg" Stretch="Fill"/>
+        <TextBox x:Name="TextBox1" Margin="502,557,185,10" TextWrapping="Wrap"/>
+        <Button Margin="647,517,44,10" Click="Button_Click_2" Background="OrangeRed" BorderBrush="WhiteSmoke">
+            <Image Height="46" Source="images.png" Stretch="Fill" Width="65"/>
+        </Button>
+        <Button Content="Prediction" Margin="618,414,44,157" Click="Button_Click_3" Background="#FFFBFBFB" BorderBrush="WhiteSmoke"/>
+        <TextBox x:Name="TextBox2" HorizontalAlignment="Left" Height="35" Margin="502,489,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Date" HorizontalAlignment="Left" Margin="398,489,0,0" VerticalAlignment="Top" Foreground="Aqua"/>
+        <Label Content="Notification" HorizontalAlignment="Left" Margin="398,557,0,0" VerticalAlignment="Top" Foreground="Aqua"/>
+
+    </Grid>
+</Window>

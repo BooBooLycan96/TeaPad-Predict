@@ -12,6 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using FireSharp.Config;
+using FireSharp.Interfaces;
+using FireSharp.Response;
+
 
 namespace TeaPad_Predict
 {
@@ -20,14 +24,31 @@ namespace TeaPad_Predict
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Drone_Click(object sender, RoutedEventArgs e)
         {
-
+            Navigation.MainWindow N = new Navigation.MainWindow();
+            N.Show();
         }
+
+        private void Harvest_Click(object sender, RoutedEventArgs e)
+        {
+            Harvest H = new Harvest();
+            H.Show();
+        }
+
+        private void Workers_Click(object sender, RoutedEventArgs e)
+        {
+            TeaPad.MainWindow W = new TeaPad.MainWindow();
+            W.Show();
+        }
+
+     
     }
 }

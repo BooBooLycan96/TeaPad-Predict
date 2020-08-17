@@ -1,0 +1,29 @@
+﻿<Window x:Class="TeaPad.calculate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TeaPad"
+        mc:Ignorable="d"
+        Title="calculate" Height="595.161" Width="801.613">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="556" VerticalAlignment="Top" Width="794" Source="plantations2-1.jpg" Stretch="Fill" />
+        <TextBlock  HorizontalAlignment="Left" Margin="150,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="154" FontSize="36" Foreground="Black" FontWeight="Bold" FontFamily="Sitka Banner"><Run Text="Area">
+                <Run.Background>
+                    <ImageBrush/>
+                </Run.Background>
+            </Run></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="150,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="228" FontSize="36" Foreground="Black" FontWeight="Bold" FontFamily="Sitka Banner"><Run Text="No Of Workers">
+                <Run.Background>
+                    <ImageBrush/>
+                </Run.Background>
+            </Run></TextBlock>
+        <TextBox Name="txt_1" HorizontalAlignment="Left" Height="50" Margin="408,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="285" FontSize="24" TextChanged="TextBox_TextChanged"/>
+        <Label Name="lbl_1" Content="" HorizontalAlignment="Left" Margin="408,216,0,0" VerticalAlignment="Top" Width="285" Height="50" FontSize="24" FontWeight="Bold"/>
+        <Button Name="btn_1" Content="Enter" HorizontalAlignment="Left" Margin="150,310,0,0" VerticalAlignment="Top" Width="275" Height="56" FontSize="36" FontFamily="Sitka Banner" Click="btn_1_Click" />
+        <Button Name="btn_2" Content="Clear" HorizontalAlignment="Left" Margin="430,310,0,0" VerticalAlignment="Top" Width="263" Height="56" FontSize="36" FontFamily="Sitka Banner" Click="btn_2_Click"/>
+        <Button Name="btn_3" Content="Select Area From The Map" HorizontalAlignment="Left" Margin="150,371,0,0" VerticalAlignment="Top" Width="543" Height="75" FontSize="36" FontFamily="Sitka Banner" Click="btn_3_Click"/>
+        <Label Content="m2" HorizontalAlignment="Left" Margin="698,144,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Button Name="btn_4" Content="Add Details" HorizontalAlignment="Left" Margin="150,451,0,0" VerticalAlignment="Top" Width="543" Height="62" FontFamily="Sitka Banner" FontSize="36" Click="btn_4_Click"/>
+    </Grid>
+</Window>

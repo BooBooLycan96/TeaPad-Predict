@@ -5,20 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TeaPad_Predict"
         mc:Ignorable="d"
-        Title="Predict Harvest" Height="450" Width="800">
+        Title="TeaPad" Height="424.812" Width="731">
+    <Window.BorderBrush>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="0"/>
+            <GradientStop Color="#FF720909" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.BorderBrush>
     <Grid>
-        <Grid.ColumnDefinitions>
+
+        <TextBlock HorizontalAlignment="Left" Margin="17,0,0,0" TextWrapping="Wrap" Text="Tea Pad Monitoring System" VerticalAlignment="Top" Foreground="Black"  FontSize="20" Width="322" Height="26"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="10,12,0,0" VerticalAlignment="Bottom" Width="75" />
+        <Grid>
+            <DockPanel HorizontalAlignment="Left" Height="217" LastChildFill="False" VerticalAlignment="Top" Width="720">
+                <Menu HorizontalAlignment="Left" Height="342" VerticalAlignment="Top" Width="724" Grid.ColumnSpan="2" Margin="0,26,0,-151">
+                    <Menu.Background>
+                        <ImageBrush ImageSource="photo-1544015759-237f87d55ef3.jpg"/>
+                    </Menu.Background>
+                    <StackPanel Orientation="Horizontal" Height="20" VerticalAlignment="Top">
+                        <Button x:Name="Drone" Content="Drone" Width="73" Click="Drone_Click" Height="20" VerticalAlignment="Top" ></Button>
+                        <Button x:Name="Harvest" Content="Harvest" Width="73" Click="Harvest_Click"></Button>
+                        <Button x:Name="Workers" Content="Workers" Width="73" Click="Workers_Click" Height="20" VerticalAlignment="Top"></Button>
+                        
 
 
-        </Grid.ColumnDefinitions>
-        <Grid HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="792" Background="#FF238EB6">
-            <Button Content="&lt;===" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"/>
-            <Button Content="Add to project" HorizontalAlignment="Left" Margin="10,312,0,0" VerticalAlignment="Top" Width="127" Height="27"/>
-            <Button Content="Predict" HorizontalAlignment="Left" Margin="230,312,0,0" VerticalAlignment="Top" Width="137" Height="27"/>
-            <Button Content="Notification" HorizontalAlignment="Left" Margin="483,312,0,0" VerticalAlignment="Top" Width="114" Height="27"/>
-            <Button Content="Cancel" HorizontalAlignment="Left" Margin="640,312,0,0" VerticalAlignment="Top" Width="114" Height="27" Click="Button_Click"/>
-            <Image x:Name="Images" HorizontalAlignment="Left" Height="231" Margin="37,45,0,0" VerticalAlignment="Top" Width="347"/>
+
+                    </StackPanel>
+
+                </Menu>
+
+            </DockPanel>
+
         </Grid>
-
     </Grid>
+
+
 </Window>

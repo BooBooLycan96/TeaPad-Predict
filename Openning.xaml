@@ -1,0 +1,34 @@
+﻿<Window x:Class="TeaPad_Predict.Openning"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TeaPad_Predict"
+        mc:Ignorable="d"
+        Title="Openning" Height="450" Width="451.825">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="photo-1544015759-237f87d55ef3.jpg"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition>
+
+            </ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition>
+
+            </RowDefinition>
+            <RowDefinition></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Button Content="Manual Mode"  HorizontalAlignment="Left" Margin="65,103,0,0" VerticalAlignment="Top" Width="146" Height="40" Click="Button_Click" Background="DarkCyan" Foreground="AntiqueWhite"/>
+        <Button Content="Auto Mode" HorizontalAlignment="Left" Margin="65,72,0,0" VerticalAlignment="Top" Width="146" Height="40" Grid.Row="1" Background="DarkBlue" Foreground="AliceBlue"/>
+        <Label Content="Operators Can Manually &#xD;&#xA;Control the System  " Grid.Column="1" Margin="45,103,21,13" Width="156" Foreground="AntiqueWhite"/>
+        <Label Content="System Will do all the Tasks&#xD;&#xA;Automatically " HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="24,72,0,0" Height="111" Width="156" Grid.Row="1" Foreground="AntiqueWhite"/>
+
+    </Grid>
+</Window>
